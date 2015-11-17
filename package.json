@@ -1,0 +1,24 @@
+{
+  "name": "require-fest",
+  "version": "0.1.0",
+  "description": "RequireJS plugin for Fest.",
+  "main": "require-fest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubaXa/require-fest.git"
+  },
+  "keywords": [
+    "fest",
+    "requirejs",
+    "plugin"
+  ],
+  "author": "RubaXa <trash@rubaxa.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RubaXa/require-fest/issues"
+  },
+  "homepage": "https://github.com/RubaXa/require-fest#readme"
+}
