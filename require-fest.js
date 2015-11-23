@@ -3,6 +3,7 @@ define(['jquery'], function ($) {
 
 	var isNodeJS = typeof window === 'undefined';
 	var buildMap = {};
+	var AMD_DEFINE = 'define';
 	var defineDummy = function (name, deps, callback) {
 		if (typeof name === 'function') {
 			callback = name;
@@ -22,7 +23,7 @@ define(['jquery'], function ($) {
 				var name = JSON.stringify(pluginName + "!" + moduleName);
                 var content = JSON.stringify(buildMap[moduleName]);
 
-                write('define(' + name + ', function () { return ' + content + '});\n');
+                write(AMD_DEFINE + '(' + name + ', function () { return ' + content + '});\n');
             }
 		},
 
